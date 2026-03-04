@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="google-adsense-account" content="ca-pub-1987919603765926" />
+  <title>AI Music Lab - Exlo Studio</title>
+  <meta name="description" data-i18n-attr="content:metaDescription" content="Utforsk hvordan Exlo Music Lab kombinerer menneskelig uttrykk med AI-støttet musikkproduksjon." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987919603765926"
+       crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNBGEGCJM4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-BNBGEGCJM4");
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: #0b0f16;
+      --panel: #0f172a;
+      --ink: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+    }
+    body {
+      font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(34, 211, 238, 0.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(167, 139, 250, 0.16), transparent 60%),
+                  var(--bg);
+      color: var(--ink);
+    }
+    .glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.65));
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 20px 60px rgba(2, 6, 23, 0.5);
+      backdrop-filter: blur(14px);
+    }
+    .gridline {
+      background-image: linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .glow {
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+    .language-switch {
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(15, 23, 42, 0.55);
+    }
+    .language-option {
+      border-radius: 9999px;
+      color: #cbd5e1;
+      transition: all 0.2s ease;
+    }
+    .language-option:hover {
+      color: #e2e8f0;
+    }
+    .language-option.active {
+      background: #22d3ee;
+      color: #0f172a;
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 24px rgba(34, 211, 238, 0.18);
+    }
+    article h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+    article h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #a78bfa;
+    }
+    article p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #cbd5e1;
+    }
+    article blockquote {
+      border-left: 4px solid #a78bfa;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      article h1 {
+        font-size: 2rem;
+      }
+      article h2 {
+        font-size: 1.5rem;
+      }
+      article p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="gridline">
+    <header class="px-6 py-8 lg:px-16">
+      <nav class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" data-i18n-attr="alt:logoAlt" alt="Exlo Studio-logo" class="h-10 w-10 rounded-xl" />
+          <div>
+            <p class="text-lg font-semibold tracking-wide">Exlo Studio</p>
+            <p class="text-xs uppercase tracking-[0.32em] text-slate-400" data-i18n="brandTagline">Digitale verktøy og spill</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 md:gap-6">
+          <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a class="hover:text-white transition" href="/" data-i18n="navHome">Hjem</a>
+            <a class="hover:text-white transition" href="/mattis-guide.html" data-i18n="navMattisGuide">Mattis-guide</a>
+            <a class="hover:text-white transition" href="/ai-music-lab.html" data-i18n="navAiMusicLab">AI Music Lab</a>
+            <a class="hover:text-white transition" href="/contact.html" data-i18n="navContact">Kontakt</a>
+          </div>
+          <div class="language-switch inline-flex items-center rounded-full p-1 text-xs font-semibold uppercase tracking-[0.18em]">
+            <button class="language-option active px-3 py-1.5" data-lang-button="no" type="button" aria-pressed="true">NO</button>
+            <button class="language-option px-3 py-1.5" data-lang-button="en" type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="px-6 lg:px-16 pb-16">
+      <article class="glass rounded-3xl p-10 lg:p-16 max-w-5xl mx-auto">
+        <div data-lang-content="no">
+          <div class="mb-6">
+            <span class="inline-block rounded-full bg-violet-400/10 px-4 py-2 text-sm font-semibold text-violet-300">Lyd og innovasjon</span>
+          </div>
+
+          <h1>Exlo Music Lab: menneskelig uttrykk, digital lyd</h1>
+
+          <blockquote>"Human heart, digital sound: The future of music has been found."</blockquote>
+
+          <h2>Filosofien bak prosjektet</h2>
+          <p>Exlo Music Lab bygger på en enkel idé: Teknologi skal forsterke kreativitet, ikke erstatte den. Vi bruker AI som et verktøy i produksjonsprosessen, men det kunstneriske uttrykket styres av mennesker. Målet er musikk som både er teknisk presis og emosjonelt troverdig.</p>
+          <p>I praksis betyr dette at vi jobber med en hybrid arbeidsflyt. AI hjelper oss med å utforske mange idéer raskt, mens menneskelig vurdering former arrangement, dynamikk og uttrykk. Resultatet er låter med tydelig identitet, ikke bare genererte mønstre.</p>
+
+          <h2>Hvordan vi bruker AI i produksjon</h2>
+          <p>Vi bruker AI blant annet til å foreslå melodiske variasjoner, harmonier og teksturer. Disse utkastene fungerer som råmateriale, ikke ferdig produkt. Deretter bearbeider vi alt manuelt gjennom redigering, lagdeling, miks og kreativ retning.</p>
+          <p>Denne metoden er spesielt nyttig når vi vil bryte ut av vante spor. AI kan introdusere uventede rytmiske eller harmoniske forslag, og vi velger det som faktisk tjener låten følelsesmessig. Slik holder vi balansen mellom eksperimentering og musikalsk tydelighet.</p>
+
+          <h2>Et åpent og lærende miljø</h2>
+          <p>Exlo Music Lab er også en arena for læring og deling. Gjennom publisering på <a href="https://music.exlo.no" target="_blank" rel="noreferrer" class="text-violet-300 hover:text-violet-200 font-semibold">music.exlo.no</a>, Spotify og YouTube viser vi både resultatene og tankegangen bak arbeidet.</p>
+          <p>Vi ønsker å bidra til et miljø der flere skapere kan ta i bruk moderne produksjonsverktøy uten å miste sitt personlige uttrykk. Teknologien utvikler seg raskt, men for oss er retningen klar: menneskelig formidling først.</p>
+
+          <h2>Det emosjonelle målet</h2>
+          <p>Til syvende og sist handler musikk om opplevelse. Om en låt ikke treffer, spiller det liten rolle hvor avansert verktøykjeden er. Derfor vurderer vi alltid resultatet med samme spørsmål: Føles dette ekte? Bærer det en stemning lytteren faktisk kjenner igjen?</p>
+          <p>Exlo Music Lab fortsetter å utforske hva AI kan bidra med, men vi holder fast ved kjernen: musikk skal formidle noe menneskelig.</p>
+
+          <div class="mt-8 p-6 rounded-2xl bg-cyan-400/5 border border-cyan-400/20">
+            <p class="text-sm font-semibold text-cyan-300 mb-2">Mer fra Exlo Studio</p>
+            <p class="text-slate-300">Les om kulturarven og strategien bak vårt norske kortspill i <a href="/mattis-guide.html" class="text-cyan-300 hover:text-cyan-200 font-semibold underline">Mattis-guiden</a>.</p>
+          </div>
+
+          <div class="mt-10 pt-8 border-t border-slate-700">
+            <div class="flex flex-wrap gap-4">
+              <a class="glow inline-flex items-center gap-2 rounded-full bg-violet-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="https://music.exlo.no/" target="_blank" rel="noreferrer">
+                Lytt på music.exlo.no
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-violet-400/30 px-6 py-3 text-sm font-semibold text-violet-300 transition hover:border-violet-300" href="https://open.spotify.com/artist/0LLP1veWAmGmNZ3mxAZvPF" target="_blank" rel="noreferrer">
+                Spotify
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-violet-400/30 px-6 py-3 text-sm font-semibold text-violet-300 transition hover:border-violet-300" href="https://www.youtube.com/@ExloMusicNO" target="_blank" rel="noreferrer">
+                YouTube
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300" href="/">
+                ← Tilbake til forsiden
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-lang-content="en" class="hidden">
+          <div class="mb-6">
+            <span class="inline-block rounded-full bg-violet-400/10 px-4 py-2 text-sm font-semibold text-violet-300">Audio Innovation</span>
+          </div>
+
+          <h1>Exlo Music Lab: Merging Human Emotion with AI-Assisted Sound</h1>
+
+          <blockquote>"Human heart, digital sound: The future of music has been found."</blockquote>
+
+          <h2>The Core Philosophy</h2>
+          <p>Exlo Music Lab is built on a simple principle: technology should amplify creativity, not replace it. We use AI as a production assistant, while artistic direction remains human. The objective is music that combines technical precision with emotional authenticity.</p>
+          <p>In practice, this means a hybrid workflow. AI helps us explore more ideas faster, and human judgment shapes arrangement, tension, and storytelling. The outcome is music with character, not just generated patterns.</p>
+
+          <h2>How We Use AI in Production</h2>
+          <p>We use AI tools for melody variation, harmonic suggestions, and sound texture exploration. These outputs are treated as raw material, never final results. We then refine everything manually through editing, layering, mixing, and creative curation.</p>
+          <p>This process is especially useful when breaking creative blocks. AI can offer unusual rhythmic or harmonic paths, and we keep only what strengthens the emotional arc of the track.</p>
+
+          <h2>An Open Creative Lab</h2>
+          <p>Exlo Music Lab is also a space for sharing and learning. Through <a href="https://music.exlo.no" target="_blank" rel="noreferrer" class="text-violet-300 hover:text-violet-200 font-semibold">music.exlo.no</a>, Spotify, and YouTube, we publish both the output and the thinking behind it.</p>
+          <p>We want to support creators who adopt modern tools without losing artistic identity. Technology evolves quickly, but our direction stays consistent: human expression comes first.</p>
+
+          <h2>The Emotional Benchmark</h2>
+          <p>Ultimately, music is measured by impact. If a track does not make you feel something, the toolchain does not matter. Our standard question is always the same: does this feel honest, and does it carry a recognizable emotional tone?</p>
+          <p>Exlo Music Lab will continue exploring AI-assisted workflows while protecting the human core of music-making.</p>
+
+          <div class="mt-8 p-6 rounded-2xl bg-cyan-400/5 border border-cyan-400/20">
+            <p class="text-sm font-semibold text-cyan-300 mb-2">More from Exlo Studio</p>
+            <p class="text-slate-300">Read about tradition, strategy, and digital preservation in our <a href="/mattis-guide.html" class="text-cyan-300 hover:text-cyan-200 font-semibold underline">Mattis guide</a>.</p>
+          </div>
+
+          <div class="mt-10 pt-8 border-t border-slate-700">
+            <div class="flex flex-wrap gap-4">
+              <a class="glow inline-flex items-center gap-2 rounded-full bg-violet-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="https://music.exlo.no/" target="_blank" rel="noreferrer">
+                Listen on music.exlo.no
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-violet-400/30 px-6 py-3 text-sm font-semibold text-violet-300 transition hover:border-violet-300" href="https://open.spotify.com/artist/0LLP1veWAmGmNZ3mxAZvPF" target="_blank" rel="noreferrer">
+                Spotify
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-violet-400/30 px-6 py-3 text-sm font-semibold text-violet-300 transition hover:border-violet-300" href="https://www.youtube.com/@ExloMusicNO" target="_blank" rel="noreferrer">
+                YouTube
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300" href="/">
+                ← Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="px-6 py-10 lg:px-16">
+      <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+        <p class="text-sm text-slate-400 text-center" data-i18n="footerCopyright">© 2026 Exlo Studio. Alle rettigheter forbeholdt.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const translations = {
+      no: {
+        htmlLang: "no",
+        pageTitle: "AI Music Lab - Exlo Studio",
+        metaDescription: "Utforsk hvordan Exlo Music Lab kombinerer menneskelig uttrykk med AI-støttet musikkproduksjon.",
+        logoAlt: "Exlo Studio-logo",
+        brandTagline: "Digitale verktøy og spill",
+        navHome: "Hjem",
+        navMattisGuide: "Mattis-guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Kontakt",
+        footerCopyright: "© 2026 Exlo Studio. Alle rettigheter forbeholdt."
+      },
+      en: {
+        htmlLang: "en",
+        pageTitle: "AI Music Lab - Exlo Studio",
+        metaDescription: "Explore how Exlo Music Lab blends human expression with AI-assisted music production.",
+        logoAlt: "Exlo Studio Logo",
+        brandTagline: "Digital Tools & Gaming",
+        navHome: "Home",
+        navMattisGuide: "Mattis Guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Contact",
+        footerCopyright: "© 2026 Exlo Studio. All rights reserved."
+      }
+    };
+
+    const supportedLanguages = ["no", "en"];
+    const storageKey = "exlo-language";
+
+    function applyLanguage(lang) {
+      const selected = supportedLanguages.includes(lang) ? lang : "no";
+      const dictionary = translations[selected];
+
+      document.documentElement.setAttribute("lang", dictionary.htmlLang || selected);
+      document.title = dictionary.pageTitle;
+
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.dataset.i18n;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          node.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((node) => {
+        const mappings = node.dataset.i18nAttr.split(",");
+        mappings.forEach((mapping) => {
+          const [rawAttr, rawKey] = mapping.split(":");
+          if (!rawAttr || !rawKey) return;
+          const attr = rawAttr.trim();
+          const key = rawKey.trim();
+          if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+            node.setAttribute(attr, dictionary[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-lang-content]").forEach((block) => {
+        block.classList.toggle("hidden", block.dataset.langContent !== selected);
+      });
+
+      document.querySelectorAll("[data-lang-button]").forEach((button) => {
+        const active = button.dataset.langButton === selected;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = params.get("lang");
+      if (supportedLanguages.includes(fromQuery)) {
+        return fromQuery;
+      }
+      try {
+        const fromStorage = localStorage.getItem(storageKey);
+        if (supportedLanguages.includes(fromStorage)) {
+          return fromStorage;
+        }
+      } catch (_) {
+        return "no";
+      }
+      return "no";
+    }
+
+    document.querySelectorAll("[data-lang-button]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const next = button.dataset.langButton;
+        if (!supportedLanguages.includes(next)) return;
+        applyLanguage(next);
+        try {
+          localStorage.setItem(storageKey, next);
+        } catch (_) {
+          // Ignore storage errors.
+        }
+      });
+    });
+
+    applyLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>

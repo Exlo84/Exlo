@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="google-adsense-account" content="ca-pub-1987919603765926" />
+  <title>Exlo Studio - Digitale verktøy og spillopplevelser</title>
+  <meta name="description" data-i18n-attr="content:metaDescription" content="Exlo Studio er en moderne plattform for digitale verktøy, kreative løsninger og spillopplevelser." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987919603765926"
+       crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNBGEGCJM4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BNBGEGCJM4');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: #0b0f16;
+      --panel: #0f172a;
+      --ink: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+    }
+    body {
+      font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(34, 211, 238, 0.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(167, 139, 250, 0.16), transparent 60%),
+                  var(--bg);
+      color: var(--ink);
+    }
+    .glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.65));
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 20px 60px rgba(2, 6, 23, 0.5);
+      backdrop-filter: blur(14px);
+    }
+    .gridline {
+      background-image: linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .glow {
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+    .fade-up {
+      animation: fadeUp 0.8s ease-out both;
+    }
+    .language-switch {
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(15, 23, 42, 0.55);
+    }
+    .language-option {
+      border-radius: 9999px;
+      color: #cbd5e1;
+      transition: all 0.2s ease;
+    }
+    .language-option:hover {
+      color: #e2e8f0;
+    }
+    .language-option.active {
+      background: #22d3ee;
+      color: #0f172a;
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 24px rgba(34, 211, 238, 0.18);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="gridline">
+    <header class="px-6 py-8 lg:px-16">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Exlo Studio Logo" class="h-10 w-10 rounded-xl" />
+          <div>
+            <p class="text-lg font-semibold tracking-wide">Exlo Studio</p>
+            <p class="text-xs uppercase tracking-[0.32em] text-slate-400" data-i18n="brandTagline">Digitale verktøy og spill</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a class="hover:text-white transition" href="/" data-i18n="navHome">Hjem</a>
+            <a class="hover:text-white transition" href="/mattis-guide.html" data-i18n="navMattisGuide">Mattis-guide</a>
+            <a class="hover:text-white transition" href="/ai-music-lab.html" data-i18n="navAiMusicLab">AI Music Lab</a>
+            <a class="hover:text-white transition" href="/contact.html" data-i18n="navContact">Kontakt</a>
+          </div>
+          <div class="language-switch inline-flex items-center rounded-full p-1 text-xs font-semibold uppercase tracking-[0.18em]">
+            <button class="language-option active px-3 py-1.5" data-lang-button="no" type="button" aria-pressed="true">NO</button>
+            <button class="language-option px-3 py-1.5" data-lang-button="en" type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="px-6 lg:px-16">
+      <section class="glass fade-up rounded-3xl p-10 lg:p-16">
+        <div class="max-w-4xl">
+          <p class="text-sm uppercase tracking-[0.4em] text-cyan-300" data-i18n="heroKicker">Exlo-økosystemet</p>
+          <h1 class="mt-5 text-4xl font-semibold leading-tight text-white md:text-6xl" data-i18n="heroTitle">
+            Et premium univers for digitale verktøy, spillopplevelser og kreative løsninger.
+          </h1>
+          <p class="mt-6 text-lg text-slate-300 md:text-xl" data-i18n="heroDescription">
+            Exlo Studio samler fokuserte produkter for produktivitet, musikk, nordisk kultur og e-bøker.
+            Hver opplevelse er designet med en raffinert mørk estetikk, høy ytelse og et moderne grensesnitt.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a class="glow inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="#projects">
+              <span data-i18n="ctaExploreProjects">Utforsk prosjekter</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300" href="/privacy.html" data-i18n="ctaPrivacyPolicy">
+              Personvernerklæring
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <div class="glass rounded-3xl p-8 lg:p-12">
+          <p class="text-sm uppercase tracking-[0.32em] text-violet-300 mb-6" data-i18n="articlesKicker">Utvalgte artikler</p>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <h2 class="text-xl font-semibold text-white md:text-2xl" data-i18n="articlesMattisTitle">Den kulturelle betydningen av Mattis</h2>
+              <p class="mt-3 text-sm text-slate-300" data-i18n="articlesMattisText">
+                Utforsk den rike arven etter Mattis, et tradisjonelt norsk kortspill, og oppdag hvordan vi bevarer denne kulturskatten.
+              </p>
+              <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="/mattis-guide.html">
+                <span data-i18n="readArticle">Les artikkel</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold text-white md:text-2xl" data-i18n="articlesMusicTitle">Exlo Music Lab: Menneskelig hjerte, digital lyd</h2>
+              <p class="mt-3 text-sm text-slate-300" data-i18n="articlesMusicText">
+                Oppdag hvordan vi kombinerer menneskelige følelser med AI-assistert musikkproduksjon for å skape lydlandskap som treffer.
+              </p>
+              <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-violet-300 hover:text-violet-200" href="/ai-music-lab.html">
+                <span data-i18n="readArticle">Les artikkel</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          <div class="mt-8 text-center">
+            <a class="glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-violet-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="/articles.html">
+              <span data-i18n="viewAllArticles">Se alle artikler</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="mt-16">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.32em] text-violet-300" data-i18n="projectsKicker">Prosjekter</p>
+            <h2 class="mt-3 text-3xl font-semibold text-white md:text-4xl" data-i18n="projectsTitle">Utvalgte destinasjoner</h2>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-1">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold text-white">Mattis</h3>
+              <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300" data-i18n="mattisTag">Spill</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-300" data-i18n="mattisDescription">
+              Mattis er mer enn bare et kortspill; det er en viktig del av norsk spillkultur som vi har tatt inn i den digitale tidsalderen. Plattformen vår tilbyr en autentisk opplevelse av dette klassiske spillet, med strategisk dybde og høy underholdningsverdi. Vi har fokusert på å skape en sømløs brukeropplevelse der nybegynnere kan lære reglene gjennom interaktive guider, og erfarne spillere kan utfordre venner på nett. Ved å digitalisere Mattis bevarer vi en tradisjon og gjør den tilgjengelig for en ny generasjon spillere over hele verden, enten de foretrekker solospill mot vår avanserte AI eller deltakelse i flerspillerturneringer.
+            </p>
+            <div class="mt-4">
+              <h4 class="text-sm font-semibold text-white mb-2" data-i18n="keyFeatures">Nøkkelfunksjoner:</h4>
+              <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                <li data-i18n="mattisFeature1">Flerspiller på nett</li>
+                <li data-i18n="mattisFeature2">Avanserte AI-motstandere</li>
+                <li data-i18n="mattisFeature3">Interaktive regelguider</li>
+                <li data-i18n="mattisFeature4">Plattformuavhengig kompatibilitet</li>
+              </ul>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="https://mattis.exlo.no/" target="_blank" rel="noreferrer">
+                <span data-i18n="launch">Åpne</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="/mattis-guide.html">
+                <span data-i18n="readStrategy">Les strategi</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="inline-flex items-center" href="https://play.google.com/store/apps/details?id=no.exlo.mattis" target="_blank" rel="noreferrer" data-i18n-attr="aria-label:mattisPlayAria">
+                <img data-i18n-attr="src:playBadgeSrc,alt:playBadgeAlt" src="https://play.google.com/intl/no_no/badges/static/images/badges/no_badge_web_generic.png" alt="Last ned på Google Play" class="h-14 w-auto" loading="lazy" />
+              </a>
+            </div>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-1">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold text-white">Music</h3>
+              <span class="rounded-full bg-violet-400/10 px-3 py-1 text-xs text-violet-300" data-i18n="musicTag">Lyd</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-300" data-i18n="musicDescription">
+              Exlo Music Lab fungerer som et kreativt episenter for lyddesign og lydatmosfære. Vi forstår at musikk er mer enn bakgrunnsstøy; det er et verktøy for fokus, kreativitet og følelsesmessig resonans. Gjennom vårt kuraterte bibliotek av lo-fi-beats, ambiente teksturer og rytmiske looper gir vi innholdsskapere og utviklere byggesteinene de trenger for å løfte prosjektene sine. Hver spilleliste og lydpakke er nøye komponert etter moderne produksjonsstandarder, slik at du får profesjonell lydkvalitet enten du strømmer for å finne arbeidsflyt eller trenger det perfekte lydsporet til neste video- eller spillprosjekt.
+            </p>
+            <div class="mt-4">
+              <h4 class="text-sm font-semibold text-white mb-2" data-i18n="keyFeatures">Nøkkelfunksjoner:</h4>
+              <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                <li data-i18n="musicFeature1">Høyoppløste lydlooper</li>
+                <li data-i18n="musicFeature2">Kurerte fokusspillelister</li>
+                <li data-i18n="musicFeature3">Rettighetsfrie ressurser for skapere</li>
+                <li data-i18n="musicFeature4">Oppslukende lydlandskap</li>
+              </ul>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="https://music.exlo.no/" target="_blank" rel="noreferrer">
+                <span data-i18n="launch">Åpne</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center gap-2 text-sm font-semibold text-violet-300 hover:text-violet-200" href="/ai-music-lab.html">
+                <span data-i18n="readStory">Les historien</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-1">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold text-white">Nordisk</h3>
+              <span class="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300" data-i18n="nordiskTag">Verktøy</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-300" data-i18n="nordiskDescription">
+              Nordisk-pakken, med flaggskipet ScandiText, er utviklet spesielt for behovene til moderne skandinaviske innholdsskapere og fagpersoner. Verktøyet går lenger enn standard tekstbehandlere med språkbevisst formatering, integrert fakturagenerering og spesialtilpassede maler for sosiale medier for det nordiske markedet. Sikkerhet er sentralt med vår innebygde passordgenerator, og vi utvider kontinuerlig verktøykassen for å forenkle den digitale hverdagen din. Målet vårt er å fjerne friksjon fra arbeidsflyten, slik at du kan bruke mindre tid på administrasjon og mer tid på kreativ verdiskaping.
+            </p>
+            <div class="mt-4">
+              <h4 class="text-sm font-semibold text-white mb-2" data-i18n="keyFeatures">Nøkkelfunksjoner:</h4>
+              <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                <li data-i18n="nordiskFeature1">Nordisk-optimalisert tekstredigering</li>
+                <li data-i18n="nordiskFeature2">Profesjonell fakturagenerator</li>
+                <li data-i18n="nordiskFeature3">Verktøy for formatering i sosiale medier</li>
+                <li data-i18n="nordiskFeature4">Sikker passordkryptering</li>
+              </ul>
+            </div>
+            <a class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="https://nordisk.exlo.no/" target="_blank" rel="noreferrer">
+              <span data-i18n="launch">Åpne</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="glass rounded-2xl p-6 transition hover:-translate-y-1">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold text-white">Ebooks</h3>
+              <span class="rounded-full bg-amber-400/10 px-3 py-1 text-xs text-amber-300" data-i18n="ebooksTag">Bibliotek</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-300" data-i18n="ebooksDescription">
+              E-bokseksjonen vår er dedikert til kunnskapsdeling i et elegant digitalt format. Vi mener at gode leseopplevelser krever både innhold med substans og et design uten forstyrrelser. Exlo Studio publiserer guider som spenner fra tekniske manualer for våre egne verktøy til dypdykk i digital produktivitet og nordisk livsstil. Ved å kombinere moderne typografi med tilgjengelig språk har vi laget et digitalt bibliotek optimalisert for lesing på alle enheter. Enten du ønsker å lære en ny ferdighet eller søker inspirasjon, er e-bøkene våre laget for å gi varig verdi og praktisk innsikt.
+            </p>
+            <div class="mt-4">
+              <h4 class="text-sm font-semibold text-white mb-2" data-i18n="keyFeatures">Nøkkelfunksjoner:</h4>
+              <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                <li data-i18n="ebooksFeature1">Responsivt digitalt format</li>
+                <li data-i18n="ebooksFeature2">Produktivitetsguider fra eksperter</li>
+                <li data-i18n="ebooksFeature3">Teknisk dokumentasjon</li>
+                <li data-i18n="ebooksFeature4">Optimalisert for offline-lesing</li>
+              </ul>
+            </div>
+            <a class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200" href="https://ebooks.exlo.no/" target="_blank" rel="noreferrer">
+              <span data-i18n="launch">Åpne</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="px-6 py-10 lg:px-16">
+      <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+        <p class="text-sm text-slate-400 text-center" data-i18n="footerCopyright">© 2026 Exlo Studio. Alle rettigheter forbeholdt.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const translations = {
+      no: {
+        htmlLang: "no",
+        pageTitle: "Exlo Studio - Digitale verktøy og spillopplevelser",
+        metaDescription: "Exlo Studio er en moderne plattform for digitale verktøy, kreative løsninger og spillopplevelser.",
+        brandTagline: "Digitale verktøy og spill",
+        navHome: "Hjem",
+        navMattisGuide: "Mattis-guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Kontakt",
+        heroKicker: "Exlo-universet",
+        heroTitle: "Et samlet sted for digitale verktøy, spill og kreativt arbeid.",
+        heroDescription: "Exlo Studio samler produkter for produktivitet, musikk, nordisk kultur og e-bøker. Hver løsning er utviklet med tydelig design, høy ytelse og et moderne uttrykk.",
+        ctaExploreProjects: "Utforsk prosjekter",
+        ctaPrivacyPolicy: "Personvern",
+        articlesKicker: "Utvalgte artikler",
+        articlesMattisTitle: "Mattis: et kortspill med kulturarv",
+        articlesMattisText: "Bli kjent med historien bak Mattis, et tradisjonelt norsk kortspill, og hvordan vi viderefører det i digital form.",
+        articlesMusicTitle: "Exlo Music Lab: menneskelig uttrykk, digital lyd",
+        articlesMusicText: "Se hvordan vi kombinerer menneskelig musikalitet med AI-støttet produksjon for å skape lydlandskap med karakter.",
+        readArticle: "Les artikkel",
+        viewAllArticles: "Se alle artikler",
+        projectsKicker: "Prosjekter",
+        projectsTitle: "Utvalgte satsinger",
+        mattisTag: "Spill",
+        mattisDescription: "Mattis er mer enn et kortspill. Det er en del av norsk spillkultur som nå er gjort tilgjengelig digitalt. Plattformen gir en tro opplevelse av klassikeren, med strategisk dybde og høy underholdningsverdi. Nybegynnere får hjelp av interaktive regelguider, mens erfarne spillere kan utfordre venner på nett. Ved å digitalisere Mattis tar vi vare på tradisjonen og gjør den tilgjengelig for nye spillere, enten de foretrekker solo mot AI eller flerspiller med andre.",
+        keyFeatures: "Nøkkelfunksjoner:",
+        mattisFeature1: "Flerspiller på nett",
+        mattisFeature2: "Smarte AI-motstandere",
+        mattisFeature3: "Interaktive regelguider",
+        mattisFeature4: "Spill på tvers av enheter",
+        launch: "Åpne nå",
+        readStrategy: "Les strategi",
+        mattisPlayAria: "Last ned Mattis på Google Play",
+        playBadgeSrc: "https://play.google.com/intl/no_no/badges/static/images/badges/no_badge_web_generic.png",
+        playBadgeAlt: "Last ned på Google Play",
+        musicTag: "Lyd",
+        musicDescription: "Exlo Music Lab er et kreativt verksted for lyddesign og stemning. For oss er musikk mer enn bakgrunn; den setter fokus, tempo og følelse. I biblioteket vårt finner du lo-fi-beats, atmosfæriske teksturer og rytmiske looper som innholdsskapere og utviklere kan bygge videre på. Hver spilleliste og lydpakke er produsert med moderne standarder, slik at du får profesjonell lyd enten du jobber, streamer eller lager innhold til video og spill.",
+        musicFeature1: "Lydlooper i høy kvalitet",
+        musicFeature2: "Håndplukkede fokusspillelister",
+        musicFeature3: "Rettighetsfrie ressurser for skapere",
+        musicFeature4: "Oppslukende lydlandskap",
+        readStory: "Les historien",
+        nordiskTag: "Verktøy",
+        nordiskDescription: "Nordisk-pakken, med ScandiText i front, er laget for moderne skandinaviske innholdsskapere og fagfolk. Verktøyet går lenger enn en vanlig tekstbehandler med språkbevisst formatering, integrert fakturering og maler for sosiale medier tilpasset nordiske behov. Sikkerhet er ivaretatt med innebygd passordgenerator, og verktøykassen utvides fortløpende for å gjøre den digitale hverdagen enklere. Målet er mindre administrasjon og mer tid til verdiskaping.",
+        nordiskFeature1: "Tekstredigering tilpasset nordiske språk",
+        nordiskFeature2: "Profesjonell fakturagenerator",
+        nordiskFeature3: "Maler og formatering for sosiale medier",
+        nordiskFeature4: "Innebygd passordgenerator",
+        ebooksTag: "Bibliotek",
+        ebooksDescription: "E-bokdelen vår handler om kunnskapsdeling i et gjennomarbeidet digitalt format. Vi mener gode leseopplevelser krever både solid innhold og et design uten støy. Exlo Studio publiserer guider som spenner fra tekniske manualer for egne verktøy til fordypning i digital produktivitet og nordisk livsstil. Med moderne typografi og klart språk har vi bygget et digitalt bibliotek som fungerer godt på alle enheter. Enten du vil lære noe nytt eller hente inspirasjon, er e-bøkene laget for å gi praktisk verdi over tid.",
+        ebooksFeature1: "Responsivt format for alle skjermer",
+        ebooksFeature2: "Produktivitetsguider fra eksperter",
+        ebooksFeature3: "Teknisk dokumentasjon",
+        ebooksFeature4: "Tilpasset lesing uten nett",
+        footerCopyright: "© 2026 Exlo Studio. Alle rettigheter forbeholdt."
+      },
+      en: {
+        htmlLang: "en",
+        pageTitle: "Exlo Studio - Digital Tools & Gaming Hub",
+        metaDescription: "Exlo Studio: a premium hub for digital tools, creative utilities, and gaming experiences.",
+        brandTagline: "Digital Tools & Gaming",
+        navHome: "Home",
+        navMattisGuide: "Mattis Guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Contact",
+        heroKicker: "Exlo ecosystem",
+        heroTitle: "A premium hub for digital tools, gaming experiences, and creative utilities.",
+        heroDescription: "Exlo Studio curates focused sub-products built for productivity, music, Nordic culture, and ebooks. Each experience is designed with a refined dark aesthetic, sleek performance, and a modern UI.",
+        ctaExploreProjects: "Explore projects",
+        ctaPrivacyPolicy: "Privacy policy",
+        articlesKicker: "Featured Articles",
+        articlesMattisTitle: "The Cultural Significance of Mattis",
+        articlesMattisText: "Explore the rich heritage of Mattis, a traditional Norwegian card game, and discover how we're preserving this cultural treasure.",
+        articlesMusicTitle: "Exlo Music Lab: Human Heart, Digital Sound",
+        articlesMusicText: "Discover how we merge human emotion with AI-assisted music production to create soundscapes that resonate.",
+        readArticle: "Read Article",
+        viewAllArticles: "View All Articles",
+        projectsKicker: "Projects",
+        projectsTitle: "Featured destinations",
+        mattisTag: "Game",
+        mattisDescription: "Mattis is more than just a card game; it is a vital piece of Norwegian gaming culture that we have brought into the digital age. Our platform offers an authentic experience of this classic game, complete with strategic depth and high entertainment value. We have focused on creating a seamless user experience where beginners can learn the rules through interactive guides, and veterans can challenge friends online. By digitizing Mattis, we preserve a tradition while making it accessible to a new generation of players worldwide, whether they prefer solo play against our sophisticated AI or participating in multiplayer tournaments.",
+        keyFeatures: "Key Features:",
+        mattisFeature1: "Online multiplayer",
+        mattisFeature2: "Advanced AI opponents",
+        mattisFeature3: "Interactive rule guides",
+        mattisFeature4: "Cross-platform compatibility",
+        launch: "Launch",
+        readStrategy: "Read Strategy",
+        mattisPlayAria: "Get Mattis on Google Play",
+        playBadgeSrc: "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
+        playBadgeAlt: "Get it on Google Play",
+        musicTag: "Audio",
+        musicDescription: "Exlo Music Lab serves as a creative epicenter for sound design and auditory atmosphere. We understand that music is more than just background noise; it is a tool for focus, creativity, and emotional resonance. Through our curated library of lo-fi beats, ambient textures, and rhythmic loops, we provide content creators and developers with the essential building blocks to elevate their own projects. Each playlist and sound pack is meticulously composed with modern production standards in mind, ensuring professional audio quality whether you are streaming to find your workflow or need the perfect soundtrack for your next video or game development project.",
+        musicFeature1: "High-fidelity audio loops",
+        musicFeature2: "Curated focus playlists",
+        musicFeature3: "Royalty-free creator assets",
+        musicFeature4: "Immersive soundscapes",
+        readStory: "Read the Story",
+        nordiskTag: "Tools",
+        nordiskDescription: "The Nordisk suite, featuring our flagship ScandiText, is specifically developed to meet the needs of modern Scandinavian content creators and professionals. The tool goes beyond standard word processors by offering language-aware formatting, integrated invoice generation, and specialized social media templates tailored for the Nordic market. Security is paramount with our built-in password generator, and we are continuously expanding our toolkit to simplify your digital daily life. Our goal is to remove friction from your workflow, allowing you to spend less time on administration and more on creative value creation.",
+        nordiskFeature1: "Nordic-optimized text editing",
+        nordiskFeature2: "Professional invoice generator",
+        nordiskFeature3: "Social media formatting tools",
+        nordiskFeature4: "Secure password encryption",
+        ebooksTag: "Library",
+        ebooksDescription: "Our Ebooks section is dedicated to knowledge sharing in an elegant, digital format. We believe that great reading experiences require both substantial content and distraction-free design. Exlo Studio publishes guides ranging from technical manuals for our own tools to deep dives into digital productivity and Nordic lifestyle. By combining modern typography with accessible language, we have created a digital library optimized for reading across all devices. Whether you are looking to learn a new skill or seeking inspiration, our ebooks are designed to provide lasting value and practical insight.",
+        ebooksFeature1: "Responsive digital formatting",
+        ebooksFeature2: "Expert-led productivity guides",
+        ebooksFeature3: "Technical documentation",
+        ebooksFeature4: "Offline reading optimization",
+        footerCopyright: "© 2026 Exlo Studio. All rights reserved."
+      }
+    };
+
+    const supportedLanguages = ["no", "en"];
+    const storageKey = "exlo-language";
+
+    function applyLanguage(lang) {
+      const selected = supportedLanguages.includes(lang) ? lang : "no";
+      const dictionary = translations[selected];
+
+      document.documentElement.setAttribute("lang", dictionary.htmlLang || selected);
+      document.title = dictionary.pageTitle;
+
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.dataset.i18n;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          node.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((node) => {
+        const mappings = node.dataset.i18nAttr.split(",");
+        mappings.forEach((mapping) => {
+          const [rawAttr, rawKey] = mapping.split(":");
+          if (!rawAttr || !rawKey) return;
+          const attr = rawAttr.trim();
+          const key = rawKey.trim();
+          if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+            node.setAttribute(attr, dictionary[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-lang-button]").forEach((button) => {
+        const active = button.dataset.langButton === selected;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = params.get("lang");
+      if (supportedLanguages.includes(fromQuery)) {
+        return fromQuery;
+      }
+      try {
+        const fromStorage = localStorage.getItem(storageKey);
+        if (supportedLanguages.includes(fromStorage)) {
+          return fromStorage;
+        }
+      } catch (_) {
+        return "no";
+      }
+      return "no";
+    }
+
+    document.querySelectorAll("[data-lang-button]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const next = button.dataset.langButton;
+        if (!supportedLanguages.includes(next)) return;
+        applyLanguage(next);
+        try {
+          localStorage.setItem(storageKey, next);
+        } catch (_) {
+          // Ignore storage errors.
+        }
+      });
+    });
+
+    applyLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>

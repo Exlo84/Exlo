@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="google-adsense-account" content="ca-pub-1987919603765926" />
+  <title>Mattis-guide - Exlo Studio</title>
+  <meta name="description" data-i18n-attr="content:metaDescription" content="Les om kulturarven bak Mattis, sentral strategi i spillet og hvordan Exlo Studio viderefører tradisjonen digitalt." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987919603765926"
+       crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNBGEGCJM4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-BNBGEGCJM4");
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: #0b0f16;
+      --panel: #0f172a;
+      --ink: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+    }
+    body {
+      font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(34, 211, 238, 0.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(167, 139, 250, 0.16), transparent 60%),
+                  var(--bg);
+      color: var(--ink);
+    }
+    .glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.65));
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 20px 60px rgba(2, 6, 23, 0.5);
+      backdrop-filter: blur(14px);
+    }
+    .gridline {
+      background-image: linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .glow {
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+    .language-switch {
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(15, 23, 42, 0.55);
+    }
+    .language-option {
+      border-radius: 9999px;
+      color: #cbd5e1;
+      transition: all 0.2s ease;
+    }
+    .language-option:hover {
+      color: #e2e8f0;
+    }
+    .language-option.active {
+      background: #22d3ee;
+      color: #0f172a;
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 24px rgba(34, 211, 238, 0.18);
+    }
+    article h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+    article h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #22d3ee;
+    }
+    article p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #cbd5e1;
+    }
+    @media (max-width: 768px) {
+      article h1 {
+        font-size: 2rem;
+      }
+      article h2 {
+        font-size: 1.5rem;
+      }
+      article p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="gridline">
+    <header class="px-6 py-8 lg:px-16">
+      <nav class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" data-i18n-attr="alt:logoAlt" alt="Exlo Studio-logo" class="h-10 w-10 rounded-xl" />
+          <div>
+            <p class="text-lg font-semibold tracking-wide">Exlo Studio</p>
+            <p class="text-xs uppercase tracking-[0.32em] text-slate-400" data-i18n="brandTagline">Digitale verktøy og spill</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 md:gap-6">
+          <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a class="hover:text-white transition" href="/" data-i18n="navHome">Hjem</a>
+            <a class="hover:text-white transition" href="/mattis-guide.html" data-i18n="navMattisGuide">Mattis-guide</a>
+            <a class="hover:text-white transition" href="/ai-music-lab.html" data-i18n="navAiMusicLab">AI Music Lab</a>
+            <a class="hover:text-white transition" href="/contact.html" data-i18n="navContact">Kontakt</a>
+          </div>
+          <div class="language-switch inline-flex items-center rounded-full p-1 text-xs font-semibold uppercase tracking-[0.18em]">
+            <button class="language-option active px-3 py-1.5" data-lang-button="no" type="button" aria-pressed="true">NO</button>
+            <button class="language-option px-3 py-1.5" data-lang-button="en" type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="px-6 lg:px-16 pb-16">
+      <article class="glass rounded-3xl p-10 lg:p-16 max-w-5xl mx-auto">
+        <div data-lang-content="no">
+          <div class="mb-6">
+            <span class="inline-block rounded-full bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">Kulturarv</span>
+          </div>
+
+          <h1>Mattis: kulturarv, strategi og digital videreføring</h1>
+
+          <h2>Innledning</h2>
+          <p>Selv i en tid med avanserte videospill og stadig mer kompleks teknologi står tradisjonelle kortspill sterkt. Mattis er et av spillene mange i Norge har et nært forhold til, enten det spilles på hytta, hjemme eller i sosiale lag. Spillet er enkelt å lære, men vanskelig å mestre, og nettopp den kombinasjonen har gitt Mattis en varig plass i norsk spillkultur.</p>
+
+          <h2>Bakgrunn og spillmekanikk</h2>
+          <p>Mattis kan beskrives som et spill om å kvitte seg med kort, ikke om å samle poeng. Målet er å unngå å sitte igjen med kort til slutt. Den siste spilleren som står igjen blir "mattis". Dette gir en helt egen nervøsitet i sluttfasen av hvert spill, der små valg får store konsekvenser.</p>
+          <p>Spillet bruker en vanlig kortstokk. For å slå et kort må du som regel følge samme farge med høyere verdi, eller bruke trumf dersom varianten tillater det. Over tid blir dette et spill om timing: Skal du bruke de sterke kortene tidlig for å være trygg, eller holde dem igjen for å presse motstanderne senere?</p>
+
+          <h2>Strategi og psykologi</h2>
+          <p>Det som skiller gode Mattis-spillere fra resten er informasjonskontroll. Du følger med på hva som allerede er spilt, hvem som mangler en bestemt farge, og hvor du kan tvinge motstanderen inn i dårlige valg. Når du klarer å sette tempoet i runden, kan du i praksis styre hele sluttspillet.</p>
+          <p>Samtidig er Mattis et sosialt spill. Spillestilen avslører ofte hvem som spiller aggressivt, hvem som spiller trygt, og hvem som tar sjanser under press. Psykologi og bordlesning er derfor en naturlig del av strategien.</p>
+
+          <h2>Digital videreføring hos Exlo Studio</h2>
+          <p>På <a href="https://mattis.exlo.no" target="_blank" rel="noreferrer" class="text-cyan-300 hover:text-cyan-200 font-semibold">mattis.exlo.no</a> har vi tatt målet om å bevare spillets kjerne på alvor. Vår digitale versjon er laget for å føles kjent for erfarne spillere, samtidig som den skal være tilgjengelig for nye brukere.</p>
+          <p>Vi har bygget løsningen med AI-motstandere, flerspiller på nett og tydelige regelguider. Slik kan flere lære spillet raskt, men fortsatt møte den strategiske dybden som gjør Mattis interessant over tid.</p>
+
+          <h2>Avslutning</h2>
+          <p>Mattis er et godt eksempel på at klassisk spilldesign fortsatt fungerer svært godt. Ved å modernisere tilgjengelighet, uten å fjerne det som gjør spillet unikt, kan tradisjoner leve videre. Målet vårt er at nye generasjoner skal oppdage hvorfor Mattis fortsatt betyr noe.</p>
+
+          <div class="mt-8 p-6 rounded-2xl bg-violet-400/5 border border-violet-400/20">
+            <p class="text-sm font-semibold text-violet-300 mb-2">Vil du lese mer?</p>
+            <p class="text-slate-300">Se hvordan vi kombinerer menneskelig uttrykk med AI-støttet musikkproduksjon i <a href="/ai-music-lab.html" class="text-violet-300 hover:text-violet-200 font-semibold underline">AI Music Lab-artikkelen</a>.</p>
+          </div>
+
+          <div class="mt-10 pt-8 border-t border-slate-700">
+            <div class="flex flex-wrap items-center gap-4">
+              <a class="glow inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="https://mattis.exlo.no/" target="_blank" rel="noreferrer">
+                Spill Mattis nå
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center" href="https://play.google.com/store/apps/details?id=no.exlo.mattis" target="_blank" rel="noreferrer" aria-label="Last ned Mattis på Google Play">
+                <img src="https://play.google.com/intl/no_no/badges/static/images/badges/no_badge_web_generic.png" alt="Last ned på Google Play" class="h-14 w-auto" loading="lazy" />
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300" href="/">
+                ← Tilbake til forsiden
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-lang-content="en" class="hidden">
+          <div class="mb-6">
+            <span class="inline-block rounded-full bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">Cultural Heritage</span>
+          </div>
+
+          <h1>The Cultural Significance and Strategy of Mattis</h1>
+
+          <h2>Introduction</h2>
+          <p>Even in an era shaped by high-end video games and constant technological change, traditional card games remain deeply relevant. In Norway, Mattis is one of those games people carry with them from childhood to adulthood. It appears in cabins, family gatherings, and social game nights, and it continues to thrive because it combines simple rules with meaningful strategic depth.</p>
+
+          <h2>Origins and Core Mechanics</h2>
+          <p>Mattis is a shedding game. The objective is not to gain points, but to avoid being the last player with cards. The final player left holding cards is called "mattis." That single pressure point creates tension in every round and makes the endgame especially intense.</p>
+          <p>The game uses a standard deck. Players typically beat a card by following suit with a higher value or by using trump cards in variants that include trump. Strategic decisions quickly emerge: spend powerful cards early for safety, or hold them to trap opponents later.</p>
+
+          <h2>Strategy and Table Psychology</h2>
+          <p>Advanced play depends on information management. Skilled players track which suits are gone, who is likely void in each suit, and when to force an opponent into a losing position. Tempo control matters as much as card strength.</p>
+          <p>Mattis is also social and psychological. Reading risk appetite, timing, and player tendencies is part of winning consistently. The best players combine probability, memory, and human insight.</p>
+
+          <h2>Digital Preservation at Exlo Studio</h2>
+          <p>At <a href="https://mattis.exlo.no" target="_blank" rel="noreferrer" class="text-cyan-300 hover:text-cyan-200 font-semibold">mattis.exlo.no</a>, our focus has been to preserve the identity of the game while making it accessible online. We designed the experience to feel authentic for experienced players while remaining approachable for newcomers.</p>
+          <p>The platform includes AI opponents, online multiplayer, and interactive rule guidance. That combination lowers the entry barrier without removing the strategy that makes Mattis worth mastering.</p>
+
+          <h2>Conclusion</h2>
+          <p>Mattis proves that classic game design still works. By modernizing access without diluting the core mechanics, we can keep traditions alive and relevant. Our goal is to ensure new generations understand why this game still matters.</p>
+
+          <div class="mt-8 p-6 rounded-2xl bg-violet-400/5 border border-violet-400/20">
+            <p class="text-sm font-semibold text-violet-300 mb-2">Interested in more?</p>
+            <p class="text-slate-300">Explore how we merge human expression with AI-assisted production in our <a href="/ai-music-lab.html" class="text-violet-300 hover:text-violet-200 font-semibold underline">AI Music Lab article</a>.</p>
+          </div>
+
+          <div class="mt-10 pt-8 border-t border-slate-700">
+            <div class="flex flex-wrap items-center gap-4">
+              <a class="glow inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5" href="https://mattis.exlo.no/" target="_blank" rel="noreferrer">
+                Play Mattis Now
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="inline-flex items-center" href="https://play.google.com/store/apps/details?id=no.exlo.mattis" target="_blank" rel="noreferrer" aria-label="Get Mattis on Google Play">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-14 w-auto" loading="lazy" />
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300" href="/">
+                ← Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="px-6 py-10 lg:px-16">
+      <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+        <p class="text-sm text-slate-400 text-center" data-i18n="footerCopyright">© 2026 Exlo Studio. Alle rettigheter forbeholdt.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const translations = {
+      no: {
+        htmlLang: "no",
+        pageTitle: "Mattis-guide - Exlo Studio",
+        metaDescription: "Les om kulturarven bak Mattis, sentral strategi i spillet og hvordan Exlo Studio viderefører tradisjonen digitalt.",
+        logoAlt: "Exlo Studio-logo",
+        brandTagline: "Digitale verktøy og spill",
+        navHome: "Hjem",
+        navMattisGuide: "Mattis-guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Kontakt",
+        footerCopyright: "© 2026 Exlo Studio. Alle rettigheter forbeholdt."
+      },
+      en: {
+        htmlLang: "en",
+        pageTitle: "Mattis Guide - Exlo Studio",
+        metaDescription: "Explore the heritage of Mattis, core strategic principles, and how Exlo Studio preserves the tradition in a modern digital format.",
+        logoAlt: "Exlo Studio Logo",
+        brandTagline: "Digital Tools & Gaming",
+        navHome: "Home",
+        navMattisGuide: "Mattis Guide",
+        navAiMusicLab: "AI Music Lab",
+        navContact: "Contact",
+        footerCopyright: "© 2026 Exlo Studio. All rights reserved."
+      }
+    };
+
+    const supportedLanguages = ["no", "en"];
+    const storageKey = "exlo-language";
+
+    function applyLanguage(lang) {
+      const selected = supportedLanguages.includes(lang) ? lang : "no";
+      const dictionary = translations[selected];
+
+      document.documentElement.setAttribute("lang", dictionary.htmlLang || selected);
+      document.title = dictionary.pageTitle;
+
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.dataset.i18n;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          node.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((node) => {
+        const mappings = node.dataset.i18nAttr.split(",");
+        mappings.forEach((mapping) => {
+          const [rawAttr, rawKey] = mapping.split(":");
+          if (!rawAttr || !rawKey) return;
+          const attr = rawAttr.trim();
+          const key = rawKey.trim();
+          if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+            node.setAttribute(attr, dictionary[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-lang-content]").forEach((block) => {
+        block.classList.toggle("hidden", block.dataset.langContent !== selected);
+      });
+
+      document.querySelectorAll("[data-lang-button]").forEach((button) => {
+        const active = button.dataset.langButton === selected;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = params.get("lang");
+      if (supportedLanguages.includes(fromQuery)) {
+        return fromQuery;
+      }
+      try {
+        const fromStorage = localStorage.getItem(storageKey);
+        if (supportedLanguages.includes(fromStorage)) {
+          return fromStorage;
+        }
+      } catch (_) {
+        return "no";
+      }
+      return "no";
+    }
+
+    document.querySelectorAll("[data-lang-button]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const next = button.dataset.langButton;
+        if (!supportedLanguages.includes(next)) return;
+        applyLanguage(next);
+        try {
+          localStorage.setItem(storageKey, next);
+        } catch (_) {
+          // Ignore storage errors.
+        }
+      });
+    });
+
+    applyLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>
